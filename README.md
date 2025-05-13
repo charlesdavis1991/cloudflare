@@ -1,3 +1,6 @@
+This project is clone of toplist tool which connected by api with subdomain backend service hosted to cloudflare.
+THis UI seems like create-tool but it's backend logic is little different with one.
+I am trying implement this and by evening all works will be done.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

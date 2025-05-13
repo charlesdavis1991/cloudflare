@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 import "./AddSubdomainForm.css"; // Import CSS for styling
 import axios from "axios";
-import "./SubdomainList.css"; // Import CSS for styling
+
 const AddSubdomainForm = () => {
   const [subdomain, setSubdomain] = useState("");
   const [ipAddress, setIpAddress] = useState("");
