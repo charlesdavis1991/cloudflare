@@ -82,8 +82,8 @@ const Chater = () => {
                         <div className="example__section-title">Without background image</div>
                         <iframe
                             title="chater without background image"
-                            className="js-example-iframe"
-                            scrolling="no"
+                            style={{height:"250px"}}
+                            scrolling="yes"
                             frameBorder="0"
                             src={`https://www.reseguiden.se/widget/toplist/charter?limit=10&slim=1&partner_logo=${includeLogo ? "1" : "0"
                                 }`}
@@ -91,7 +91,7 @@ const Chater = () => {
                         <div className="example__section-subtitle">
                             Link to paste into an iframe
                         </div>
-                        <div className="clearfix">
+                        <div style={{display:"flex", flexDirection:"row", width:"100%"}}>
                             <textarea
                                 className="example__code-block "
                                 readOnly
@@ -107,7 +107,7 @@ const Chater = () => {
                     <div className="example__section-subtitle">
                         Link to paste into an iframe
                     </div>
-                    <div className="clearfix">
+                    <div style={{display:"flex", flexDirection:"row", width:"100%"}}>
                         <textarea
                             className="example__code-block js-toplist-link js-code pull-left"
                             readOnly
@@ -125,7 +125,7 @@ const Chater = () => {
                     <div className="example__section-title">With background image</div>
                     <iframe
                         title="chater with background image"
-                        className="js-example-iframe"
+                        style={{height:"250px"}}
                         scrolling="no"
                         frameBorder="0"
                         src={`https://www.reseguiden.se/widget/toplist/charter?limit=10&slim=1&partner_logo=${includeLogo ? "1" : "0"
@@ -135,7 +135,7 @@ const Chater = () => {
                     <div className="example__section-subtitle">
                         Link to paste into an iframe
                     </div>
-                    <div className="clearfix">
+                    <div style={{display:"flex", flexDirection:"row", width:"100%"}}>
                         <textarea
                             className="example__code-block js-toplist-link js-code pull-left"
                             readOnly
@@ -150,10 +150,10 @@ const Chater = () => {
 
                 {/* With Image */}
                 <div className="example__section js-example-div-image">
-                    <div className="example__section-title">Med bild</div>
+                    <div className="example__section-title">With Image</div>
                     <iframe
                         title="chater with image"
-                        className="js-example-iframe"
+                        style={{height:"250px"}}
                         scrolling="no"
                         frameBorder="0"
                         src={`https://www.reseguiden.se/widget/toplist/charter?limit=10&slim=1&partner_logo=${includeLogo ? "1" : "0"
@@ -163,7 +163,7 @@ const Chater = () => {
                     <div className="example__section-subtitle">
                         Link to paste into an iframe
                     </div>
-                    <div className="clearfix">
+                    <div style={{display:"flex", flexDirection:"row", width:"100%"}}>
                         <textarea
                             className="example__code-block js-toplist-link js-code pull-left"
                             readOnly

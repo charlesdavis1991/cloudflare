@@ -138,7 +138,8 @@ const LastMinute = () => {
           <div className="example__section js-example-div-background">
             <div className="example__section-title">Med bakgrundsbild</div>
             <iframe
-              className="js-example-iframe"
+              title="With Background Image"
+               style={{height:"250px"}}
               scrolling="no"
               frameBorder="0"
               src={`https://www.reseguiden.se/widget/toplist/charter?limit=10&slim=1&partner_logo=${
@@ -151,7 +152,8 @@ const LastMinute = () => {
           <div className="example__section js-example-div-image">
             <div className="example__section-title">Med bild</div>
             <iframe
-              className="js-example-iframe"
+               title="With Image"
+               style={{height:"250px"}}
               scrolling="no"
               frameBorder="0"
               src={`https://www.reseguiden.se/widget/toplist/charter?limit=10&slim=1&partner_logo=${
