@@ -1,0 +1,49 @@
+.subdomain-list-container {
+    max-width: 800px;
+    margin-bottom:"60px" ;
+    text-align: left;
+  }
+  
+  .add-subdomain-button {
+    background-color: #ff7300;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 60px;
+  }
+  
+  .add-subdomain-button:hover {
+    background-color: #e56700;
+  }
+  
+  .subdomain-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom:"5%";
+  }
+  
+  .subdomain-table th,
+  .subdomain-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    margin-bottom:"5%";
+  }
+  
+  .subdomain-table th {
+    background-color: #f5f5f5;
+    text-align: left;
+    margin-bottom:"5%";
+  }
+  
+  .delete-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    background-color: #e60000;
+  }

@@ -1,0 +1,172 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color:rgba(231,132,44,1);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.chaterSelect  {
+
+      display: block;
+      padding: 5px;
+      font-size: 12px;
+      border-radius: 8px;
+      border-width:1px;
+      border-color: black(34,34,34,1);
+      transition: border-color 0.3s ease, border-width 0.3s ease;;
+      
+      }
+ .chaterSelect:hover {   
+              border-color: rgba(231,132,44,1);
+              border-width : 1px
+              }
+/* Menu Section */
+.menu {
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.menu__title {
+  font-size: 14px;
+  
+  margin-bottom: 10px;
+}
+
+.menu__subtitle {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.menu__submenu a {
+  font-size: 12px;
+  margin: 5px 0;
+  color:rgba(231,132,44,1);
+}
+
+.menu__submenu a:hover {
+  text-decoration: underline;
+}
+
+.menu__active {
+  font-size:12px ;
+  color:rgba(231,132,44,1);
+}
+
+/* Example Section */
+.example__title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.example__subtitle {
+
+  margin-top: 20px;
+}
+
+.example__section-title {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.example__section-subtitle {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.example__code-block {
+  width: 95%;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-family: monospace;
+  resize: none;
+}
+
+.example__copy-btn {
+  background-color:rgba(231,132,44,1);
+  width:80px;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.example__copy-btn:hover {
+  background-color:rgba(231,132,44,1);
+}
+
+/* Form Styles */
+form {
+  margin-top: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+
+input[type="checkbox"] {
+  margin-right: 5px;
+  background-color:rgba(231,132,44,1);
+}
+
+.btn {
+  background-color:white;
+  width:100px;
+  color: rgba(231,132,44,1);
+  padding: 5px 8px;
+  border-width: 1px;
+  border-color:rgba(231,132,44,1);
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(231,132,44,1);
+  color: white;
+
+}
+
+/* Iframe Section */
+iframe {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu {
+    margin-bottom: 20px;
+  }
+
+  .example__section {
+    margin-top: 20px;
+  }
+}
