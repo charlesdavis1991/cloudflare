@@ -6,14 +6,34 @@ import { Subdomains } from './components/Subdomains'
 import { DisplayBoard } from './components/DisplayBoard'
 import CreateSubdomain from './components/CreateSubdomain'
 import { getAllSubdomains, createSubdomain } from './services/SubdomainService'
-
+import { supabase } from './supabaseClient';
+import PaymentForm from './components/PaymentForm';
 function App() {
 
   const [subdomain, setSubdomain] = useState({})
   const [subdomains, setSubdomains] = useState([])
   const [numberOfSubdomains, setNumberOfSubdomains] = useState(0)
 
+const handleLogin = async (provider) =>{
+  try {
+    const { data, error } = await supabase.auth.signInWithOAuth({
+      provider, // e.g., 'google', 'github'
+      options: {
+        redirectTo: 'http://localhost:3000/callback', // Replace with your redirect URL
+      },
+    });
 
+    if (error) {
+      console.error('Error during login:', error.message);
+      alert('Login failed. Please try again.');
+    } else {
+      console.log('Redirecting to:', data.url);
+      window.location.href = data.url; // Redirect to the provider's login page
+    }
+  } catch (error) {
+    console.error('Unexpected error:', error.message);
+  }
+}
   const subdomainCreate = (e) => {
 
       createSubdomain(subdomain)
@@ -31,6 +51,7 @@ function App() {
   }
 
   const fetchAllSubdomains = () => {
+    console.log("Fetching all subdomains...");
     getAllSubdomains()
       .then(subdomains => {
         console.log(subdomains)
@@ -85,6 +106,10 @@ function App() {
           <div className="row mrgnbtm">
             <Subdomains subdomains={subdomains}></Subdomains>
           </div>
+          <h1>Supabase OAuth Login</h1>
+          <PaymentForm/>
+      <button onClick={() => handleLogin('google')}>Login with Google</button>
+      <button onClick={() => handleLogin('github')}>Login with GitHub</button>
         </div>
     );
 }
